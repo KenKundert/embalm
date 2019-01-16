@@ -26,8 +26,7 @@ from .preferences import (
 from .utilities import two_columns, render_command
 from inform import (
     Color, Error,
-    conjoin, cull, display, error, full_stop, indent, indent, is_collection,
-    narrate, os_error, output, render, warn,
+    cull, display, full_stop, indent, narrate, output, render, warn,
 )
 from docopt import docopt
 from shlib import mkdir, mv, rm, to_path, Run, set_prefs
@@ -201,8 +200,9 @@ class Backup(Command):
         for each in settings.values('must_exist'):
             path = to_path(each)
             if not path.exists():
-                settings.fail(
-                    f'{each}: does not exist, perform setup and restart.'
+                raise Error(
+                    'does not exist, perform setup and restart.',
+                    culprit=each
                 )
 
         # run prerequisites

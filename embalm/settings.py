@@ -38,7 +38,7 @@ from .utilities import gethostname, getusername
 from shlib import cd, mkdir, Run, to_path
 from inform import (
     Error,
-    conjoin, full_stop, get_informer, is_str, narrate, os_error, render, warn,
+    conjoin, full_stop, get_informer, is_str, narrate, warn,
 )
 from textwrap import dedent
 from appdirs import user_config_dir
