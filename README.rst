@@ -5,8 +5,8 @@ embalm -- Encrypted Backups to a Remote Server
 :Version: 0.2.0
 :Released: 2018-09-14
 
-*This program is no longer being supported. It has been replaced by `Emborg 
-<https://github.com/KenKundert/emborg>`_, which is a front-end for Borg rather 
+*This program is no longer being supported. It has been replaced by* `Emborg 
+<https://github.com/KenKundert/emborg>`_, *which is a front-end for Borg rather 
 than Duplicity.*
 
 Embalm is a simple command line utility to orchestrate backups. It is built on 
